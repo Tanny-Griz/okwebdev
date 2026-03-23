@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
     <main className="bg-[#f7f7f5] text-black">
+      <Navbar />
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
           
