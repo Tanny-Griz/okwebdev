@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Web Developer in Minneapolis | Minnesota",
   description: "I specialize in developing websites, stores, blogs, and business profiles tailored to the needs of Small and Medium Businesses.",
+    keywords: [
+    "Frontend Developer",
+    "WordPress Developer",
+    "Web Developer USA",
+  ],
+  authors: [{ name: "Tanya Kovalenko" }],
 };
 
 export default function RootLayout({
