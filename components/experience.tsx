@@ -18,7 +18,7 @@ export function Experience() {
             <div>
               <p className="text-sm text-black/40">2022 — Present</p>
               <h3 className="mt-1 text-lg font-medium">
-                Web Developer (Contract)
+                Web Developer
               </h3>
               <p className="mt-2 text-black/65">
                 Building and maintaining business websites and e-commerce

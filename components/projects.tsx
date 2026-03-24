@@ -1,6 +1,6 @@
 import { projects } from "@/data/projects";
-import { ProjectCard } from "@/components/project-card";
-import { AnimatedSection } from "./AnimatedSection";
+import { ProjectCard } from "@/components/ProjectCard";
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 export function Projects() {
   return (

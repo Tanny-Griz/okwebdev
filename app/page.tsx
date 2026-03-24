@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="text-black">
+      <main>
         <Hero />
         <About />
         <Projects />
