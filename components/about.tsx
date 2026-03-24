@@ -55,7 +55,7 @@ export function About() {
           </h2>
 
           <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-black/65 md:text-lg">
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-black/65">
+            <p className="max-w-2xl text-lg leading-8 text-black/65">
               I build modern, responsive websites that balance clean design, performance,
               and real business needs. My work focuses on creating interfaces that feel
               intuitive, polished, and effective in practice.
@@ -67,10 +67,13 @@ export function About() {
               products.
             </p>
 
+          </div>
+
+          <div className="mt-8">
             <a
               href="/Tanya_K_Resume_web_dev_01_2026.pdf"
               download
-              className="group inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+              className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
               style={{
                 background: "linear-gradient(135deg, #1bae70, #169c63)"
               }}
@@ -79,7 +82,7 @@ export function About() {
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
+                className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

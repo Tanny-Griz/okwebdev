@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     "Web Developer USA",
   ],
   authors: [{ name: "Tanya Kovalenko" }],
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
