@@ -10,23 +10,38 @@ export function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a href="#about" className="text-sm text-black/65 transition hover:text-black">
+          <a
+            href="#about"
+            className="text-sm text-black/65 transition hover:text-black"
+          >
             About
           </a>
-          <a href="#projects" className="text-sm text-black/65 transition hover:text-black">
+          <a
+            href="#projects"
+            className="text-sm text-black/65 transition hover:text-black"
+          >
             Projects
           </a>
-          <a href="#stack" className="text-sm text-black/65 transition hover:text-black">
+          <a
+            href="#stack"
+            className="text-sm text-black/65 transition hover:text-black"
+          >
             Stack
           </a>
-          <a href="#contact" className="text-sm text-black/65 transition hover:text-black">
+          <a
+            href="#contact"
+            className="text-sm text-black/65 transition hover:text-black"
+          >
             Contact
           </a>
         </nav>
 
         <a
           href="#contact"
-          className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
+          className="rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+          style={{
+            background: "linear-gradient(135deg, #1bae70, #169c63)",
+          }}
         >
           Let’s Talk
         </a>

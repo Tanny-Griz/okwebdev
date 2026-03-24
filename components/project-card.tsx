@@ -42,15 +42,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <div className="mt-6">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-black transition hover:text-black/65"
-          >
-            View Live Site
-            <span aria-hidden="true">↗</span>
-          </a>
+          {project.isCurrent ? (
+            <span className="inline-flex items-center gap-2 text-sm text-black/50">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#1bae70]" />
+              Live on this page
+            </span>
+          ) : (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-black transition hover:text-black/65"
+            >
+              View Live Site
+              <span aria-hidden="true">↗</span>
+            </a>
+          )}
         </div>
       </div>
     </article>

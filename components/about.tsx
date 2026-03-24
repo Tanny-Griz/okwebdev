@@ -42,7 +42,9 @@ export function About() {
             <p className="text-sm uppercase tracking-[0.14em] text-black/45">
               Currently
             </p>
-            <p className="mt-3 text-2xl font-semibold">Software Development A.A.S.</p>
+            <p className="mt-3 text-2xl font-semibold">
+              Software Development A.A.S.
+            </p>
             <p className="mt-2 text-sm leading-6 text-black/60">
               Expanding toward full-stack engineering
             </p>
@@ -51,22 +53,23 @@ export function About() {
 
         <div>
           <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">
-            Building polished, business-focused websites with strong frontend execution.
+            Building business-focused websites that balance design, performance,
+            and usability.
           </h2>
 
           <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-black/65 md:text-lg">
             <p className="max-w-2xl text-lg leading-8 text-black/65">
-              I build modern, responsive websites that balance clean design, performance,
-              and real business needs. My work focuses on creating interfaces that feel
-              intuitive, polished, and effective in practice.
+              I build modern, responsive websites that balance clean design,
+              performance, and real business needs. My work focuses on creating
+              interfaces that feel intuitive, polished, and effective in
+              practice.
             </p>
 
             <p className="max-w-2xl text-lg leading-8 text-black/65">
-              I enjoy working across different types of projects — from business websites
-              to e-commerce — turning ideas into structured, user-friendly digital
-              products.
+              I enjoy working across different types of projects — from business
+              websites to e-commerce — turning ideas into structured,
+              user-friendly digital products.
             </p>
-
           </div>
 
           <div className="mt-8">
@@ -75,11 +78,10 @@ export function About() {
               download
               className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
               style={{
-                background: "linear-gradient(135deg, #1bae70, #169c63)"
+                background: "linear-gradient(135deg, #1bae70, #169c63)",
               }}
             >
               Download Resume
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"
@@ -88,7 +90,11 @@ export function About() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l4-4m-4 4l-4-4M5 21h14" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 3v12m0 0l4-4m-4 4l-4-4M5 21h14"
+                />
               </svg>
             </a>
           </div>
