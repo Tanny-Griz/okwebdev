@@ -1,4 +1,5 @@
 import { Code2, Database, Globe, Wrench } from "lucide-react";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function Stack() {
   const stackGroups = [
@@ -17,7 +18,7 @@ export function Stack() {
     {
       title: "Backend",
       icon: Database,
-      items: ["REST APIs","Python", "MongoDB", "PostgreSQL"],
+      items: ["REST APIs", "Python", "MongoDB", "PostgreSQL"],
     },
     {
       title: "Web & CMS",
@@ -32,7 +33,10 @@ export function Stack() {
   ];
 
   return (
-    <section id="stack" className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]">
+    <AnimatedSection
+      id="stack"
+      className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-black/40">
@@ -63,6 +67,6 @@ export function Stack() {
           })}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

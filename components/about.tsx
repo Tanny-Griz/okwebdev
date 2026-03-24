@@ -1,6 +1,11 @@
+import { AnimatedSection } from "./AnimatedSection";
+
 export function About() {
   return (
-    <section id="about" className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]">
+    <AnimatedSection
+      id="about"
+      className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]"
+    >
       <div className="mx-auto mb-12 max-w-7xl text-center">
         <p className="text-sm uppercase tracking-[0.22em] text-black/40">
           About
@@ -100,6 +105,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

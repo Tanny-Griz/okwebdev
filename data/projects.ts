@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "A modern personal portfolio website designed and developed to present projects, skills, and experience with a clean layout, smooth interactions, and strong focus on usability and performance.",
     image: "/images/okwebdev.jpg",
     liveUrl: "/",
-    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     isCurrent: true
   },
   {

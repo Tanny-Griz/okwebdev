@@ -29,6 +29,12 @@ export function Navbar() {
             Stack
           </a>
           <a
+            href="#experience"
+            className="text-sm text-black/65 transition hover:text-black"
+          >
+            Experience
+          </a>
+          <a
             href="#contact"
             className="text-sm text-black/65 transition hover:text-black"
           >

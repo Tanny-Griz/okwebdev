@@ -1,8 +1,14 @@
+"use client";
+
 import { Mail } from "lucide-react";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-24 px-6 py-24 text-center">
+    <AnimatedSection
+      id="contact"
+      className="scroll-mt-24 px-6 py-24 text-center bg-[#f7f7f5]"
+    >
       <div className="mx-auto mb-12 max-w-7xl text-center">
         <p className="text-sm uppercase tracking-[0.22em] text-black/40">
           Contact
@@ -46,6 +52,6 @@ export function Contact() {
           <Mail className="h-5 w-5 transition-transform group-hover:scale-110" />
         </a>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

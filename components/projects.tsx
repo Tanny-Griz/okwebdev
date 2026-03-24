@@ -1,9 +1,10 @@
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/project-card";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function Projects() {
   return (
-    <section id="projects" className="scroll-mt-24 px-6 py-20">
+    <AnimatedSection id="projects" className="scroll-mt-24 px-6 py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-black/40">
@@ -17,6 +18,6 @@ export function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
