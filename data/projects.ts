@@ -44,7 +44,7 @@ export const projects: Project[] = [
       "A custom-built website for a trucking company, developed from a custom design with a fully tailored frontend implementation.",
     image: "/images/dfmtrucking.png",
     liveUrl: "https://dfmtrucking.com/",
-    stack: ["WordPress", "Custom CSS", "Custom Layout"],
+    stack: ["WordPress", "CSS", "PHP", "Custom Layout"],
   },
   {
     title: "CHE Project",
