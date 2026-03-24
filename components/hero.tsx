@@ -42,7 +42,7 @@ export function Hero() {
             variants={fadeUp}
             className="text-4xl font-semibold tracking-tight md:text-5xl"
           >
-            Frontend Developer building modern web experiences
+            Web Developer building modern web experiences
           </motion.h1>
 
           <motion.p
