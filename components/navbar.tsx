@@ -1,7 +1,7 @@
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-[#f6f5f2]/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
+    <header className="sticky top-0 z-50 px-6 border-b border-black/5 bg-[#f6f5f2]/80 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between py-4">
         <a
           href="#top"
           className="text-sm font-semibold uppercase tracking-[0.18em] text-black"
