@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section id="about" className="px-6 py-20 scroll-mt-24 bg-[#f7f7f5]">
+    <section id="about" className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]">
       <div className="mx-auto mb-12 max-w-7xl text-center">
         <p className="text-sm uppercase tracking-[0.22em] text-black/40">
           About
