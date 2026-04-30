@@ -6,8 +6,41 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const renderProjectStatus = (project: Project) => {
+    switch (project.status) {
+      case "current":
+        return (
+          <span className="inline-flex items-center gap-2 text-sm text-black/50">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#1bae70]" />
+            Live on this page
+          </span>
+        );
+
+      case "soon":
+        return (
+          <span className="inline-flex items-center gap-2 text-sm text-black/50">
+            <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
+            Coming Soon
+          </span>
+        );
+
+      case "live":
+      default:
+        return (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-black transition hover:text-black/65"
+          >
+            View Live Site
+            <span aria-hidden="true">↗</span>
+          </a>
+        );
+    }
+  };
   return (
-    <article className="group rounded-[28px] border border-black/8 bg-white/70 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <div className="flex h-full flex-col rounded-[28px] border border-black/8 bg-white/70 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div className="overflow-hidden rounded-[10px]">
         <Image
           src={project.image}
@@ -18,7 +51,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         />
       </div>
 
-      <div className="px-2 pb-2 pt-5">
+      <div className="flex flex-1 flex-col px-2 pb-2 pt-5">
         <p className="text-xs uppercase tracking-[0.18em] text-black/40">
           {project.category}
         </p>
@@ -36,30 +69,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
             Built with
           </p>
 
-          <p className="mt-2 text-sm leading-6 text-black/70">
+          <p className="mt-3 text-sm leading-6 text-black/65">
             {project.stack.join(" · ")}
           </p>
         </div>
 
-        <div className="mt-6">
-          {project.isCurrent ? (
-            <span className="inline-flex items-center gap-2 text-sm text-black/50">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#1bae70]" />
-              Live on this page
-            </span>
-          ) : (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-black transition hover:text-black/65"
-            >
-              View Live Site
-              <span aria-hidden="true">↗</span>
-            </a>
-          )}
-        </div>
+        <div className="mt-auto pt-6">{renderProjectStatus(project)}</div>
       </div>
-    </article>
+    </div>
   );
 }
