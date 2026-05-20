@@ -19,7 +19,7 @@ export function About() {
             </p>
             <p className="mt-3 text-2xl font-semibold">7+ years</p>
             <p className="mt-2 text-sm leading-6 text-black/60">
-              Web development & digital projects
+              Websites, e-commerce & client projects
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export function About() {
             </p>
             <p className="mt-3 text-2xl font-semibold">Frontend & E-commerce</p>
             <p className="mt-2 text-sm leading-6 text-black/60">
-              React, Vue, WordPress, responsive UI
+              React, Next.js, Vue, Shopify, WordPress, UI/UX, SEO
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export function About() {
               Software Development A.A.S.
             </p>
             <p className="mt-2 text-sm leading-6 text-black/60">
-              Expanding toward full-stack engineering
+              Focused on modern frontend engineering
             </p>
           </div>
         </div>

@@ -18,10 +18,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
       case "soon":
         return (
-          <span className="inline-flex items-center gap-2 text-sm text-black/50">
-            <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
-            Coming Soon
-          </span>
+          <div className="flex flex-col gap-4">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-yellow-500/20 bg-yellow-50 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-yellow-700">
+              <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
+              Active development
+            </div>
+
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-[15px] text-black transition hover:opacity-70"
+            >
+              View Preview ↗
+            </a>
+          </div>
         );
 
       case "live":
