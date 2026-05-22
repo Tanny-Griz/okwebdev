@@ -28,7 +28,7 @@ const fadeIn = {
 
 export function Hero() {
   return (
-    <section className="px-6 py-16 md:py-24 min-h-[calc(100vh-73px)] flex items-center">
+    <section className="px-6 py-20 min-h-[calc(100vh-73px)] flex items-center">
       <div className="mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
         <motion.div variants={fadeIn} initial="hidden" animate="show">
           <motion.p

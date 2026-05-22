@@ -4,7 +4,7 @@ import { AnimatedSection } from "./AnimatedSection";
 
 export function Experience() {
   return (
-    <AnimatedSection id="experience" className="scroll-mt-24 px-6 py-24">
+    <AnimatedSection id="experience" className="scroll-mt-24 px-6 py-20">
       <div className="mx-auto mb-12 max-w-7xl text-center">
         <p className="text-sm uppercase tracking-[0.22em] text-black/40">
           Experience

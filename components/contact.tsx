@@ -7,7 +7,7 @@ export function Contact() {
   return (
     <AnimatedSection
       id="contact"
-      className="scroll-mt-24 px-6 py-24 text-center bg-[#f7f7f5]"
+      className="scroll-mt-24 px-6 py-20 text-center bg-[#f7f7f5]"
     >
       <div className="mx-auto mb-12 max-w-7xl text-center">
         <p className="text-sm uppercase tracking-[0.22em] text-black/40">
