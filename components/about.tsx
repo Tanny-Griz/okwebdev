@@ -19,7 +19,7 @@ export function About() {
             </p>
             <p className="mt-3 text-2xl font-semibold">7+ years</p>
             <p className="mt-2 text-sm leading-6 text-black/60">
-              Websites, e-commerce & client projects
+              Websites, e-commerce, web apps & client projects
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export function About() {
             </p>
             <p className="mt-3 text-2xl font-semibold">Concept to production</p>
             <p className="mt-2 text-sm leading-6 text-black/60">
-              Build, deploy, maintain, improve
+              Plan, design, develop, deploy, maintain, improve
             </p>
           </div>
 
@@ -51,29 +51,33 @@ export function About() {
               Software Development A.A.S.
             </p>
             <p className="mt-2 text-sm leading-6 text-black/60">
-              Focused on modern frontend engineering
+              Expanding backend and full-stack engineering skills
             </p>
           </div>
         </div>
 
         <div>
           <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">
-            Building business-focused websites that balance design, performance,
-            and usability.
+            Helping businesses turn ideas into polished, user-friendly digital
+            products.
           </h2>
 
           <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-black/65 md:text-lg">
             <p className="max-w-2xl text-lg leading-8 text-black/65">
-              I build modern, responsive websites that balance clean design,
-              performance, and real business needs. My work focuses on creating
-              interfaces that feel intuitive, polished, and effective in
-              practice.
+              I’m a web developer with a strong frontend background and
+              experience working across different types of web projects — from
+              custom interfaces and single-page applications to WordPress,
+              Shopify, and e-commerce websites. My work combines frontend
+              development, CMS customization, SEO knowledge, and client-focused
+              problem solving. I’m comfortable improving existing websites,
+              fixing frontend issues, creating responsive layouts, and helping
+              businesses turn unclear ideas into structured, usable digital
+              products.
             </p>
 
             <p className="max-w-2xl text-lg leading-8 text-black/65">
-              I enjoy working across different types of projects — from business
-              websites to e-commerce — turning ideas into structured,
-              user-friendly digital products.
+              I enjoy projects where clean design, performance, maintainability,
+              and real user needs come together.
             </p>
           </div>
 

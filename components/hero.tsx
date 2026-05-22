@@ -35,22 +35,23 @@ export function Hero() {
             variants={fadeUp}
             className="mb-6 text-sm uppercase tracking-[0.2em] text-black/50"
           >
-            Product-minded web developer | Minnesota, USA
+            WEB DEVELOPER · FRONTEND · E-COMMERCE · MINNESOTA
           </motion.p>
 
           <motion.h1
             variants={fadeUp}
             className="text-4xl font-semibold tracking-tight md:text-5xl"
           >
-            Web Developer building modern web experiences
+            Web Developer focused on clean, modern web experiences
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="mt-6 text-lg text-black/65 max-w-xl"
           >
-            I build clean, responsive websites with React, Vue, WordPress, and
-            e-commerce experience.
+            I create responsive websites and e-commerce interfaces using React,
+            Vue, Next.js, WordPress, and Shopify — with attention to usability,
+            performance, and real business needs.
           </motion.p>
 
           <motion.div

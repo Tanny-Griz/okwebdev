@@ -17,12 +17,13 @@ export function Experience() {
 
             <div>
               <p className="text-sm text-black/40">2022 — Present</p>
-              <h3 className="mt-1 text-lg font-medium">
-                Web Developer
-              </h3>
+              <h3 className="mt-1 text-lg font-medium">Web Developer</h3>
               <p className="mt-2 text-black/65">
-                Building and maintaining business websites and e-commerce
-                platforms, focusing on performance, SEO, and long-term support.
+                Developing and maintaining business websites and e-commerce
+                platforms with a focus on responsive design, SEO, performance,
+                and long-term support. Working directly with clients to turn
+                business needs into clear, functional, and maintainable web
+                solutions.
               </p>
             </div>
           </div>
@@ -34,10 +35,10 @@ export function Experience() {
               <p className="text-sm text-black/40">2019 — 2022</p>
               <h3 className="mt-1 text-lg font-medium">Frontend Developer</h3>
               <p className="mt-2 text-black/65">
-                Built single-page applications for different business needs
-                using modern JavaScript frameworks, with a focus on clean
-                structure, reusable components, and reliable production-ready
-                solutions.
+                Built single-page applications and reusable frontend components
+                using modern JavaScript frameworks. Worked in team environments
+                with designers, backend developers, and project managers,
+                following code review processes and clean code standards.
               </p>
             </div>
           </div>
@@ -49,8 +50,10 @@ export function Experience() {
               <p className="text-sm text-black/40">2015 — 2016</p>
               <h3 className="mt-1 text-lg font-medium">SEO Specialist</h3>
               <p className="mt-2 text-black/65">
-                Improved organic traffic and search visibility through SEO
-                strategy and performance optimization.
+                Worked on SEO strategy, website visibility, content
+                optimization, and search performance, building a strong
+                foundation in how websites attract users and support business
+                goals.
               </p>
             </div>
           </div>

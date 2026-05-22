@@ -23,7 +23,7 @@ export function Stack() {
     {
       title: "Web & CMS",
       icon: Globe,
-      items: ["WordPress", "WooCommerce", "Twig", "Shopify"],
+      items: ["Shopify", "WordPress", "WooCommerce", "Twig", "Wix"],
     },
     {
       title: "Workflow & Tools",
