@@ -1,4 +1,11 @@
-export const experience = [
+type Experience = {
+  period: string;
+  role: string;
+  isCurrent: boolean;
+  description: string;
+};
+
+export const experience: Experience[] = [
   {
     period: "2022 - Present",
     role: "Web Developer",

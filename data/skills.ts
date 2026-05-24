@@ -1,4 +1,12 @@
-export const stackGroups = [
+export type StackIcon = "code" | "database" | "globe" | "wrench";
+
+export type StackGroups = {
+  title: string;
+  icon: StackIcon;
+  items: string[];
+};
+
+export const stackGroups: StackGroups[] = [
   {
     title: "Frontend",
     icon: "code",
