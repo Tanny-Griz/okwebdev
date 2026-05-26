@@ -16,7 +16,7 @@ export const services: Service[] = [
   {
     title: "Website Development & Support",
     description:
-      "Custom websites and improvements for existing sites across modern platforms, CMS, and no-code tools.",
+      "Custom websites and improvements for existing sites across modern platforms and CMS",
     icon: Code2,
     includes: [
       "Business websites",
