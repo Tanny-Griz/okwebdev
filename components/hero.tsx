@@ -51,7 +51,7 @@ export function Hero() {
         <motion.div variants={fadeIn} initial="hidden" animate="show">
           <motion.p
             variants={fadeUp}
-            className="mb-6 text-sm uppercase tracking-[0.22em] text-black/50"
+            className="mb-6 text-sm uppercase tracking-[0.22em] text-black/50 text-center md:text-left"
           >
             Web Developer · E-commerce · CMS · Minnesota
           </motion.p>
@@ -111,7 +111,7 @@ export function Hero() {
             delay: 0.25,
             ease: [0.22, 1, 0.36, 1] as const,
           }}
-          className="relative min-h-107.5"
+          className="relative min-h-110 md:min-h-130 xl:min-h-110"
         >
           <div className="absolute inset-0 rounded-[3rem] bg-linear-to-br from-[#1bae70]/10 via-white to-black/3" />
 
@@ -175,7 +175,7 @@ export function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-20 left-0 rounded-3xl border border-black/10 bg-white/85 p-5 shadow-xl shadow-black/5 backdrop-blur"
+            className="absolute bottom-24 md:bottom-34 xl:bottom-22 left-0 rounded-3xl border border-black/10 bg-white/85 p-5 shadow-xl shadow-black/5 backdrop-blur"
           >
             <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eef2ec]">
               <ShoppingBag className="h-6 w-6 text-black" />
@@ -196,7 +196,7 @@ export function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-8 right-10 grid grid-cols-2 gap-3"
+            className="absolute bottom-2 md:bottom-8 xl:bottom-15 right-5 md:right-8 grid grid-cols-2 gap-3"
           >
             {[
               { label: "React/Next.js", icon: Layers },
@@ -217,9 +217,6 @@ export function Hero() {
               );
             })}
           </motion.div>
-
-          <div className="absolute left-14 top-1/2 h-px w-40 bg-linear-to-r from-transparent via-[#1bae70]/40 to-transparent" />
-          <div className="absolute right-24 bottom-32 h-px w-32 bg-linear-to-r from-transparent via-[#1bae70]/40 to-transparent" />
         </motion.div>
       </div>
     </section>
