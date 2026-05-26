@@ -10,7 +10,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     switch (project.status) {
       case "current":
         return (
-          <span className="inline-flex items-center gap-2 text-sm text-black/50">
+          <span className="inline-flex items-center gap-2 text-[15px] text-black/50">
             <span className="h-1.5 w-1.5 rounded-full bg-[#1bae70]" />
             Live on this page
           </span>
