@@ -202,7 +202,7 @@ export function Hero() {
               { label: "React/Next.js", icon: Layers },
               { label: "Vue/Nuxt.js", icon: Boxes },
               { label: "CMS", icon: Globe },
-              { label: "UI", icon: Sparkles },
+              { label: "UI/UX", icon: Sparkles },
             ].map((item) => {
               const Icon = item.icon;
 
