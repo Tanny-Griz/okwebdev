@@ -1,7 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import {
+  Code2,
+  Globe,
+  Layers,
+  ShoppingBag,
+  Sparkles,
+  Boxes,
+} from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -20,79 +27,199 @@ const fadeIn = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.18,
+      staggerChildren: 0.16,
       delayChildren: 0.1,
+    },
+  },
+};
+
+const float = {
+  animate: {
+    y: [0, -10, 0],
+    transition: {
+      duration: 5,
+      repeat: Infinity,
+      ease: "easeInOut" as const,
     },
   },
 };
 
 export function Hero() {
   return (
-    <section className="px-6 py-20 min-h-[calc(100vh-73px)] flex items-center">
-      <div className="mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
+    <section className="flex min-h-[calc(100vh-73px)] items-center overflow-hidden px-6 py-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[0.95fr_1.05fr]">
         <motion.div variants={fadeIn} initial="hidden" animate="show">
           <motion.p
             variants={fadeUp}
-            className="mb-6 text-sm uppercase tracking-[0.2em] text-black/50"
+            className="mb-6 text-sm uppercase tracking-[0.22em] text-black/50"
           >
-            WEB DEVELOPER · FRONTEND · E-COMMERCE · MINNESOTA
+            Web Developer · E-commerce · CMS · Minnesota
           </motion.p>
 
           <motion.h1
             variants={fadeUp}
-            className="text-4xl font-semibold tracking-tight md:text-5xl"
+            className="max-w-2xl text-4xl font-semibold tracking-[-0.04em] text-black md:text-6xl"
           >
-            Web Developer focused on clean, modern web experiences
+            Clean, modern websites and apps for real business needs
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
-            className="mt-6 text-lg text-black/65 max-w-xl"
+            className="mt-6 max-w-xl text-lg leading-8 text-black/65"
           >
-            I create responsive websites and e-commerce interfaces using React,
-            Vue, Next.js, WordPress, and Shopify — with attention to usability,
-            performance, and real business needs.
+            I create responsive websites, web apps, and e-commerce experiences
+            that look polished, work smoothly, and support your business goals.
           </motion.p>
 
           <motion.div
             variants={fadeUp}
-            className="mt-6 flex items-center gap-3 text-sm text-black/60"
+            className="mt-8 flex flex-wrap items-center gap-4"
+          >
+            <a
+              href="#contact"
+              className="rounded-full bg-[#1bae70] px-7 py-3 text-sm font-medium text-white shadow-lg shadow-[#1bae70]/20 transition hover:-translate-y-0.5 hover:bg-[#15975f]"
+            >
+              Let’s Talk
+            </a>
+
+            <a
+              href="#projects"
+              className="rounded-full border border-black/10 px-7 py-3 text-sm font-medium text-black transition hover:border-black/30 hover:bg-black/3"
+            >
+              View Projects
+            </a>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            className="mt-7 flex items-center gap-3 text-sm text-black/60"
           >
             <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#1bae70]/60"></span>
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#1bae70]"></span>
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#1bae70]/60" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
             </span>
 
             <span>Available for new projects</span>
           </motion.div>
         </motion.div>
-        <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          animate="show"
-          className="relative flex justify-center md:justify-center xl:justify-end"
-        >
-          <motion.div
-            initial={{ opacity: 0, y: 30, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{
-              duration: 0.9,
-              delay: 0.25,
-              ease: [0.22, 1, 0.36, 1] as const,
-            }}
-            whileHover={{ y: -6 }}
-            className="relative mt-4 w-[240px] sm:w-[280px] md:mt-8 md:w-[320px] xl:mt-0 xl:w-[380px]"
-          >
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-purple-200 via-transparent to-blue-200 blur-2xl opacity-50" />
 
-            <Image
-              src="/images/hero-img.jpeg"
-              alt="Tanya"
-              width={400}
-              height={500}
-              className="relative h-auto w-full rounded-3xl object-cover shadow-xl"
-            />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.25,
+            ease: [0.22, 1, 0.36, 1] as const,
+          }}
+          className="relative min-h-107.5"
+        >
+          <div className="absolute inset-0 rounded-[3rem] bg-linear-to-br from-[#1bae70]/10 via-white to-black/3" />
+
+          <motion.div
+            variants={float}
+            animate="animate"
+            className="absolute left-4 top-10 rounded-3xl border border-black/10 bg-white/80 p-5 shadow-xl shadow-black/5 backdrop-blur"
+          >
+            <div className="mb-4 flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
+              <span className="h-2.5 w-2.5 rounded-full bg-black/10" />
+              <span className="h-2.5 w-2.5 rounded-full bg-black/10" />
+            </div>
+
+            <div className="space-y-3">
+              <div className="h-3 w-44 rounded-full bg-[#1bae70]/20" />
+              <div className="h-3 w-64 rounded-full bg-black/10" />
+              <div className="h-3 w-52 rounded-full bg-black/10" />
+              <div className="h-3 w-72 rounded-full bg-black/10" />
+            </div>
           </motion.div>
+
+          <motion.div
+            animate={{
+              y: [0, 12, 0],
+              rotate: [0, -1.5, 0],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute right-4 top-20 w-[76%] rounded-4xl bg-[#063f2d] p-6 text-white shadow-2xl shadow-black/20"
+          >
+            <div className="mb-6 flex items-center justify-between">
+              <div className="flex gap-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+                <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+              </div>
+
+              <Code2 className="h-5 w-5 text-white/70" />
+            </div>
+
+            <div className="space-y-3">
+              <div className="h-3 w-2/3 rounded-full bg-white/25" />
+              <div className="h-3 w-5/6 rounded-full bg-[#1bae70]/60" />
+              <div className="h-3 w-1/2 rounded-full bg-white/20" />
+              <div className="h-3 w-4/5 rounded-full bg-white/20" />
+              <div className="h-3 w-3/5 rounded-full bg-[#1bae70]/50" />
+            </div>
+          </motion.div>
+
+          <motion.div
+            animate={{
+              x: [0, 8, 0],
+              y: [0, -8, 0],
+            }}
+            transition={{
+              duration: 5.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute bottom-20 left-0 rounded-3xl border border-black/10 bg-white/85 p-5 shadow-xl shadow-black/5 backdrop-blur"
+          >
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eef2ec]">
+              <ShoppingBag className="h-6 w-6 text-black" />
+            </div>
+
+            <p className="text-sm font-medium text-black">Shopify E-commerce</p>
+            <p className="mt-1 text-sm text-black/50">
+              Storefront · Products · Checkout
+            </p>
+          </motion.div>
+
+          <motion.div
+            animate={{
+              y: [0, -12, 0],
+            }}
+            transition={{
+              duration: 4.8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute bottom-8 right-10 grid grid-cols-2 gap-3"
+          >
+            {[
+              { label: "React/Next.js", icon: Layers },
+              { label: "Vue/Nuxt.js", icon: Boxes },
+              { label: "CMS", icon: Globe },
+              { label: "UI", icon: Sparkles },
+            ].map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <div
+                  key={item.label}
+                  className="flex items-center gap-2 rounded-2xl border border-black/10 bg-white/80 px-4 py-3 text-sm text-black/70 shadow-lg shadow-black/5 backdrop-blur"
+                >
+                  <Icon className="h-4 w-4 text-[#1bae70]" />
+                  <span>{item.label}</span>
+                </div>
+              );
+            })}
+          </motion.div>
+
+          <div className="absolute left-14 top-1/2 h-px w-40 bg-linear-to-r from-transparent via-[#1bae70]/40 to-transparent" />
+          <div className="absolute right-24 bottom-32 h-px w-32 bg-linear-to-r from-transparent via-[#1bae70]/40 to-transparent" />
         </motion.div>
       </div>
     </section>
