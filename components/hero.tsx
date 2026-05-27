@@ -67,8 +67,9 @@ export function Hero() {
             variants={fadeUp}
             className="mt-6 max-w-xl text-lg leading-8 text-black/65"
           >
-            I create responsive websites, web apps, and e-commerce experiences
-            that look polished, work smoothly, and support your business goals.
+            Hi, I’m Tanya. I create responsive websites, web apps, and
+            e-commerce experiences that look polished, work smoothly, and
+            support your business goals.
           </motion.p>
 
           <motion.div
