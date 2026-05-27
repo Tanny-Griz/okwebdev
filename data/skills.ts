@@ -47,6 +47,7 @@ export const stackGroups: StackGroups[] = [
       "Vercel",
       "AI tools",
       "Cursor",
+      "Codex",
     ],
   },
 ] as const;
