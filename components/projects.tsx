@@ -4,7 +4,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 
 export function Projects() {
   return (
-    <AnimatedSection id="projects" className="scroll-mt-24 px-6 py-20">
+    <AnimatedSection id="projects" className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-black/40">

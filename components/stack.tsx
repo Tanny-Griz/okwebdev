@@ -13,7 +13,7 @@ export function Stack() {
   return (
     <AnimatedSection
       id="stack"
-      className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]"
+      className="scroll-mt-24 px-6 py-20"
     >
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto mb-12 text-center">

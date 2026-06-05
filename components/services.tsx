@@ -6,7 +6,7 @@ import { services } from "@/data/services";
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-24 px-6 py-20">
+    <section id="services" className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]">
       <div className="mx-auto max-w-7xl">
         <div className="mb-18 text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-black/40">
