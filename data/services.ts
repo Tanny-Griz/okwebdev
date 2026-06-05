@@ -11,7 +11,7 @@ export const services: Service[] = [
   {
     title: "Website Design & Development",
     description:
-      "Clean, responsive websites for small businesses, creative brands, and service providers.",
+      "Clean, responsive websites for businesses, creative brands, and service providers.",
     icon: Code2,
     includes: [
       "Business websites",

@@ -80,7 +80,7 @@ export function Hero() {
             variants={fadeUp}
             className="mt-6 max-w-xl text-lg leading-8 text-black/65"
           >
-            Hi, I’m Tanya. I help small businesses, creative brands, and
+            Hi, I’m Tanya. I help businesses, creative brands, and
             independent owners create clean websites, online stores, and website
             improvements.
           </motion.p>
