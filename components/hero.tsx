@@ -1,13 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Code2,
   Globe,
   Layers,
+  Monitor,
+  PanelsTopLeft,
+  SearchCheck,
   ShoppingBag,
+  ShoppingCart,
   Sparkles,
   Boxes,
+  Store,
 } from "lucide-react";
 
 const fadeUp = {
@@ -44,32 +50,39 @@ const float = {
   },
 };
 
+const heroServices = [
+  { label: "Websites", icon: Monitor },
+  { label: "E-commerce", icon: ShoppingCart },
+  { label: "WordPress", icon: PanelsTopLeft },
+  { label: "Shopify", icon: Store },
+  { label: "SEO", icon: SearchCheck },
+  { label: "Custom Code", icon: Code2 },
+];
+
 export function Hero() {
   return (
     <section className="flex min-h-[calc(100vh-73px)] items-center overflow-hidden px-6 py-20">
-      <div className="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[0.95fr_1.05fr]">
+      <div className="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[1.05fr_0.95fr]">
         <motion.div variants={fadeIn} initial="hidden" animate="show">
-          <motion.p
-            variants={fadeUp}
-            className="mb-6 text-sm uppercase tracking-[0.22em] text-black/50 text-center md:text-left"
-          >
-            Web Developer · E-commerce · CMS · Minnesota
-          </motion.p>
+          <span className="mb-6 flex items-center justify-start gap-3 text-sm uppercase tracking-[0.22em] text-black/50">
+            <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#1bae70]" />
+            Hi, I’m Tanya, Web Developer & Designer in Minnesota
+          </span>
 
           <motion.h1
             variants={fadeUp}
             className="max-w-2xl text-4xl font-semibold tracking-[-0.04em] text-black md:text-6xl"
           >
-            Clean, modern websites and apps for real business needs
+            Websites that feel personal, polished, and easy to use
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="mt-6 max-w-xl text-lg leading-8 text-black/65"
           >
-            Hi, I’m Tanya. I create responsive websites, web apps, and
-            e-commerce experiences that look polished, work smoothly, and
-            support your business goals.
+            Hi, I’m Tanya. I help small businesses, creative brands, and
+            independent owners create clean websites, online stores, and website
+            improvements.
           </motion.p>
 
           <motion.div
@@ -91,17 +104,22 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
+          <motion.ul
             variants={fadeUp}
-            className="mt-7 flex items-center gap-3 text-sm text-black/60"
+            className="mt-7 flex max-w-2xl flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm font-medium text-black/55 md:justify-start"
+            aria-label="Services"
           >
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#1bae70]/60" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
-            </span>
+            {heroServices.map((service) => {
+              const Icon = service.icon;
 
-            <span>Available for new projects</span>
-          </motion.div>
+              return (
+                <li key={service.label} className="flex items-center gap-2">
+                  <Icon className="h-4 w-4 shrink-0 text-[#1bae70]" />
+                  <span>{service.label}</span>
+                </li>
+              );
+            })}
+          </motion.ul>
         </motion.div>
 
         <motion.div
@@ -112,26 +130,34 @@ export function Hero() {
             delay: 0.25,
             ease: [0.22, 1, 0.36, 1] as const,
           }}
-          className="relative min-h-110 md:min-h-130 xl:min-h-110"
+          className="relative min-h-136 md:min-h-144 xl:min-h-136"
         >
           <div className="absolute inset-0 rounded-[3rem] bg-linear-to-br from-[#1bae70]/10 via-white to-black/3" />
 
           <motion.div
             variants={float}
             animate="animate"
-            className="absolute left-4 top-10 rounded-3xl border border-black/10 bg-white/80 p-5 shadow-xl shadow-black/5 backdrop-blur"
+            id="hero-img1"
+            className="absolute left-1/2 top-4 z-20 w-[90%] max-w-160 -translate-x-1/2 overflow-hidden rounded-4xl border border-black/10 bg-white shadow-2xl shadow-black/12"
           >
-            <div className="mb-4 flex items-center gap-2">
-              <span className="h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
-              <span className="h-2.5 w-2.5 rounded-full bg-black/10" />
-              <span className="h-2.5 w-2.5 rounded-full bg-black/10" />
+            <div className="flex items-center justify-between border-b border-black/10 bg-white/95 px-4 py-3 backdrop-blur">
+              <div className="flex items-center gap-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#ff6b6b]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-[#ffd166]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
+              </div>
+              <div className="h-2 w-20 rounded-full bg-black/10" />
             </div>
 
-            <div className="space-y-3">
-              <div className="h-3 w-44 rounded-full bg-[#1bae70]/20" />
-              <div className="h-3 w-64 rounded-full bg-black/10" />
-              <div className="h-3 w-52 rounded-full bg-black/10" />
-              <div className="h-3 w-72 rounded-full bg-black/10" />
+            <div className="relative aspect-16/10 overflow-hidden bg-[#f4f7f5]">
+              <Image
+                src="/images/clothing-store-mockup.png"
+                alt="Clothing online store preview"
+                fill
+                priority
+                sizes="(min-width: 1024px) 600px, (min-width: 768px) 52vw, 90vw"
+                className="object-cover"
+              />
             </div>
           </motion.div>
 
@@ -145,7 +171,7 @@ export function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute right-4 top-20 w-[76%] rounded-4xl bg-[#063f2d] p-6 text-white shadow-2xl shadow-black/20"
+            className="absolute right-0 top-72 z-10 w-[62%] rotate-2 rounded-4xl bg-[#063f2d] p-6 text-white opacity-95 shadow-2xl shadow-black/20"
           >
             <div className="mb-6 flex items-center justify-between">
               <div className="flex gap-2">
@@ -176,16 +202,21 @@ export function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-24 md:bottom-34 xl:bottom-22 left-0 rounded-3xl border border-black/10 bg-white/85 p-5 shadow-xl shadow-black/5 backdrop-blur"
+            className="absolute bottom-26 xl:bottom-16 left-0 z-30 flex max-w-[20rem] items-center gap-4 rounded-3xl border border-black/10 bg-white/92 p-4 shadow-2xl shadow-black/10 backdrop-blur"
           >
-            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eef2ec]">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eef2ec]">
               <ShoppingBag className="h-6 w-6 text-black" />
             </div>
 
-            <p className="text-sm font-medium text-black">Shopify E-commerce</p>
-            <p className="mt-1 text-sm text-black/50">
-              Storefront · Products · Checkout
-            </p>
+            <div>
+              <p className="text-sm font-medium text-black">
+                Shopify E-commerce
+              </p>
+              <p className="mt-1 text-sm leading-5 text-black/50">
+                Storefront · Products · Collections
+                <br />Checkout · SEO
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -197,7 +228,7 @@ export function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-2 md:bottom-8 xl:bottom-15 right-5 md:right-8 grid grid-cols-2 gap-3"
+            className="absolute bottom-0 right-3 z-30 grid grid-cols-2 gap-3 md:right-8"
           >
             {[
               { label: "React/Next.js", icon: Layers },
