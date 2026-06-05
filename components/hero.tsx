@@ -106,7 +106,7 @@ export function Hero() {
 
           <motion.ul
             variants={fadeUp}
-            className="mt-7 flex max-w-2xl flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm font-medium text-black/55 md:justify-start"
+            className="mt-7 flex max-w-2xl flex-wrap items-center justify-start gap-x-5 gap-y-3 text-sm font-medium text-black/55"
             aria-label="Services"
           >
             {heroServices.map((service) => {
