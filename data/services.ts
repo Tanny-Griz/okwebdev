@@ -1,9 +1,4 @@
-import {
-  Code2,
-  ShoppingBag,
-  Settings,
-  type LucideIcon,
-} from "lucide-react";
+import { Code2, ShoppingBag, RefreshCw, Settings, type LucideIcon } from "lucide-react";
 
 export type Service = {
   title: string;
@@ -14,14 +9,14 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "Website Development & Support",
+    title: "Website Design & Development",
     description:
-      "Custom websites and improvements for existing sites across modern platforms and CMS",
+      "Clean, responsive websites for small businesses, creative brands, and service providers.",
     icon: Code2,
     includes: [
       "Business websites",
       "Landing pages",
-      "Existing site improvements/redesigns",
+      "Portfolio websites",
       "Responsive UI",
       "Custom frontend",
     ],
@@ -29,19 +24,33 @@ export const services: Service[] = [
   {
     title: "E-commerce & Shopify Setup",
     description:
-      "Custom Shopify stores and product experiences built to look polished, work smoothly, and support online sales.",
+      "Online stores and product experiences built to look polished, work smoothly, and support sales.",
     icon: ShoppingBag,
     includes: [
-      "Custom storefront",
+      "Shopify setup",
       "Product pages",
+      "Collections",
       "Cart & checkout flow",
-      "Shopify integrations",
+      "Store improvements",
     ],
   },
   {
-    title: "Website Launch & Technical Setup",
+    title: "Website Redesign & Improvements",
     description:
-      "Everything you need to launch your website safely and make it work smoothly.",
+      "Updates for websites that feel outdated, messy, hard to use, or no longer match your business.",
+    icon: RefreshCw,
+    includes: [
+      "Layout cleanup",
+      "Mobile improvements",
+      "Content updates",
+      "UI refresh",
+      "Performance improvements",
+    ],
+  },
+  {
+    title: "Launch, SEO & Website Support",
+    description:
+      "Technical setup and ongoing help to keep your website live, organized, and easy to manage.",
     icon: Settings,
     includes: [
       "Domain & hosting",
