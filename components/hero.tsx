@@ -61,7 +61,10 @@ const heroServices = [
 
 export function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-73px)] items-center overflow-hidden px-6 py-20">
+    <section
+      id="top"
+      className="flex min-h-[calc(100vh-73px)] items-center overflow-hidden px-6 py-20"
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[1.05fr_0.95fr]">
         <motion.div variants={fadeIn} initial="hidden" animate="show">
           <span className="mb-6 flex items-center justify-start gap-3 text-sm uppercase tracking-[0.22em] text-black/50">
