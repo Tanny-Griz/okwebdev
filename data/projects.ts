@@ -28,7 +28,7 @@ export const projects: Project[] = [
       "Headless Shopify storefront built with Next.js and TypeScript, featuring dynamic product rendering, cart and wishlist logic, filtering, pagination, and responsive UI architecture.",
     image: "/images/skibka.jpg",
     liveUrl: "https://www.skibka.com",
-    status: "soon",
+    status: "live",
     stack: [
       "Next.js",
       "React",
