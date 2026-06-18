@@ -40,6 +40,16 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "DFM Trucking",
+    category: "Custom Business Website",
+    description:
+      "Custom business website created with Nuxt.js and TypeScript, featuring a fast modern frontend, smooth content management through a separate WordPress admin panel, and deployment on Vercel.",
+    image: "/images/dfmtrucking.jpg",
+    liveUrl: "https://dfmtrucking.com/",
+    status: "live",
+    stack: ["Nuxt.js", "Vue", "TypeScript", "WordPress Admin", "Vercel"],
+  },
+  {
     title: "Brugen Jewelers",
     category: "E-commerce",
     description:
@@ -58,16 +68,6 @@ export const projects: Project[] = [
     liveUrl: "https://vonpalmorehof.com/",
     status: "live",
     stack: ["WordPress", "CSS"],
-  },
-  {
-    title: "DFM Trucking",
-    category: "Custom Business Website",
-    description:
-      "Custom business website developed with WordPress and ACF, featuring a fully tailored frontend implementation based on a custom-designed layout.",
-    image: "/images/dfmtrucking.png",
-    liveUrl: "https://dfmtrucking.com/",
-    status: "live",
-    stack: ["WordPress", "CSS", "PHP", "Custom Layout"],
   },
   {
     title: "CHE Project",
