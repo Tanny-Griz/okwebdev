@@ -154,7 +154,7 @@ export function Hero() {
 
             <div className="relative aspect-16/10 overflow-hidden bg-[#f4f7f5]">
               <Image
-                src="/images/clothing-store-mockup.png"
+                src="/images/clothing-store-mockup.jpg"
                 alt="Clothing online store preview"
                 fill
                 priority
