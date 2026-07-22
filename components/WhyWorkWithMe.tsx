@@ -35,7 +35,10 @@ const benefits = [
 
 export function WhyWorkWithMe() {
   return (
-    <section className="px-6 py-20 bg-[#f7f7f5]">
+    <section
+      id="why-work-with-me"
+      className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]"
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.45fr_0.55fr]">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
@@ -44,14 +47,14 @@ export function WhyWorkWithMe() {
           transition={{ duration: 0.55, ease: "easeOut" }}
           className="order-2 lg:order-1"
         >
-          <p className="flex items-center gap-3 text-sm uppercase tracking-[0.22em] text-black/40">
+          <h2 className="flex items-center gap-3 text-sm uppercase tracking-[0.22em] text-black/40">
             <span className="h-2.5 w-2.5 rounded-full bg-[#1bae70]" />
-            Why work with me
-          </p>
-
-          <h2 className="mt-4 max-w-3xl text-3xl font-medium tracking-[-0.04em] text-black md:text-5xl">
-            A different kind of web help
+            Why Work With Me
           </h2>
+
+          <p className="mt-4 max-w-3xl text-3xl font-medium tracking-[-0.04em] text-black md:text-5xl">
+            A different kind of web help
+          </p>
 
           <div className="mt-10 grid gap-x-10 gap-y-6 md:grid-cols-2">
             {benefits.map((benefit, index) => {
