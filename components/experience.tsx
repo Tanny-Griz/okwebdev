@@ -8,9 +8,9 @@ export function Experience() {
   return (
     <AnimatedSection id="experience" className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]">
       <div className="mx-auto mb-12 max-w-7xl text-center">
-        <p className="text-sm uppercase tracking-[0.22em] text-black/40">
+        <h2 className="text-sm uppercase tracking-[0.22em] text-black/40">
           Experience
-        </p>
+        </h2>
       </div>
       <div className="mx-auto max-w-7xl">
         <div className="mt-12 space-y-10">

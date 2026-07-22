@@ -7,9 +7,9 @@ export function About() {
       className="scroll-mt-24 px-6 py-20 bg-[#f7f7f5]"
     >
       <div className="mx-auto mb-12 max-w-7xl text-center">
-        <p className="text-sm uppercase tracking-[0.22em] text-black/40">
+        <h2 className="text-sm uppercase tracking-[0.22em] text-black/40">
           About
-        </p>
+        </h2>
       </div>
       <div className="mx-auto grid max-w-7xl gap-12 items-center md:grid-cols-[0.9fr_1.1fr]">
         <div className="grid gap-4 sm:grid-cols-2">
@@ -57,10 +57,10 @@ export function About() {
         </div>
 
         <div>
-          <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">
+          <p className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">
             Helping businesses turn ideas into polished, user-friendly digital
             products.
-          </h2>
+          </p>
 
           <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-black/65 md:text-lg">
             <p className="max-w-2xl text-lg leading-8 text-black/65">

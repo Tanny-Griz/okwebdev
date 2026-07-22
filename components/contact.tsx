@@ -11,13 +11,13 @@ export function Contact() {
       className="scroll-mt-24 px-6 py-20 text-center"
     >
       <div className="mx-auto max-w-7xl text-center">
-        <p className="text-sm uppercase tracking-[0.22em] text-black/40">
+        <h2 className="text-sm uppercase tracking-[0.22em] text-black/40">
           Contact
-        </p>
-
-        <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-black md:text-5xl">
-          Let’s work together
         </h2>
+
+        <p className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-black md:text-5xl">
+          Let’s work together
+        </p>
 
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-black/60">
           Have an idea or a project in mind? Tell me about it.

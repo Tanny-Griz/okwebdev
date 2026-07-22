@@ -17,9 +17,9 @@ export function Stack() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto mb-12 text-center">
-          <p className="text-sm uppercase tracking-[0.22em] text-black/40">
+          <h2 className="text-sm uppercase tracking-[0.22em] text-black/40">
             Stack
-          </p>
+          </h2>
         </div>
         <div className="space-y-8 text-lg text-black/70">
           {stackGroups.map((group) => {
