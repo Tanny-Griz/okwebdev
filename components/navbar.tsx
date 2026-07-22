@@ -7,7 +7,7 @@ const menuItems = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#stack", label: "Stack" },
-  { href: "#why-work-with-me", label: "Why Work With Me" },
+  { href: "#why-work-with-me", label: "Why Me" },
   { href: "#contact", label: "Contact" },
 ];
 
