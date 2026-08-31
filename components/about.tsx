@@ -83,7 +83,7 @@ export function About() {
 
           <div className="mt-8">
             <a
-              href="/Tanya_K_Resume_WebDev_08_2026.pdf"
+              href="/public/Tanya_K_Web_Dev_Resume_09_2026.pdf"
               download
               className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
               style={{
