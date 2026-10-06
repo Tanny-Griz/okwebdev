@@ -27,7 +27,7 @@ export const stackGroups: StackGroups[] = [
   {
     title: "Backend",
     icon: "database",
-    items: ["REST APIs", "Python", "MongoDB", "PostgreSQL"],
+    items: ["REST APIs", "Java", "Spring Boot", "Python", "MongoDB", "PostgreSQL"],
   },
   {
     title: "Web & CMS",

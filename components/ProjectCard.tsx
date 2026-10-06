@@ -8,14 +8,6 @@ type ProjectCardProps = {
 export function ProjectCard({ project }: ProjectCardProps) {
   const renderProjectStatus = (project: Project) => {
     switch (project.status) {
-      case "current":
-        return (
-          <span className="inline-flex items-center gap-2 text-[15px] text-black/50">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#1bae70]" />
-            Live on this page
-          </span>
-        );
-
       case "soon":
         return (
           <div className="flex flex-col gap-4">
@@ -24,20 +16,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
               Active development
             </div>
 
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="text-[15px] text-black transition hover:opacity-70"
-            >
-              View Preview ↗
-            </a>
+            {project.liveUrl ? (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[15px] text-black transition hover:opacity-70"
+              >
+                View Preview ↗
+              </a>
+            ) : null}
           </div>
         );
 
       case "live":
       default:
-        return (
+        return project.liveUrl ? (
           <a
             href={project.liveUrl}
             target="_blank"
@@ -47,7 +41,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             View Live Site
             <span aria-hidden="true">↗</span>
           </a>
-        );
+        ) : null;
     }
   };
   return (
