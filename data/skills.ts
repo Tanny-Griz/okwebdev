@@ -32,7 +32,7 @@ export const stackGroups: StackGroups[] = [
   {
     title: "Web & CMS",
     icon: "globe",
-    items: ["Shopify", "WordPress", "WooCommerce", "Twig", "Wix"],
+    items: ["Shopify", "WordPress", "WooCommerce", "Twig", "Wix", "Oracle APEX"],
   },
   {
     title: "Workflow & Tools",
